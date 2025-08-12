@@ -1,83 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Demo Dashboard</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaushal Kumar Chaman - Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin: 5px 0;
+        }
+        section {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            border-bottom: 2px solid #555;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li::before {
+            content: "• ";
+            color: #0073e6;
+            font-weight: bold;
+        }
+        .contact a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .subheading {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
 </head>
-<body class="bg-light">
-  <div class="container py-4">
-    <h1 class="mb-4">Demo Dashboard</h1>
+<body>
 
-    <div class="row g-3">
-      <div class="col-md-4">
-        <div class="card text-center shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Users</h5>
-            <p class="display-6">1,245</p>
-          </div>
-        </div>
-      </div>
+<header>
+    <h1>Kaushal Kumar Chaman</h1>
+    <p class="contact">
+        📞 +1-437-972-2780 | 📧 <a href="mailto:chamankaushal@gmail.com">chamankaushal@gmail.com</a> | 
+        🌐 <a href="https://www.linkedin.com/in/kaushal-chaman-22b45a86/" target="_blank">LinkedIn</a>
+    </p>
+    <p>Toronto, Canada</p>
+</header>
 
-      <div class="col-md-4">
-        <div class="card text-center shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Sales</h5>
-            <p class="display-6">$12,300</p>
-          </div>
-        </div>
-      </div>
+<section>
+    <h2>Summary</h2>
+    <p>10+ years experienced & result-oriented DevOps Engineer with deep expertise in cloud-based technologies, infrastructure deployment, and core DevOps concepts such as containerization, virtualization, version control, load balancing, and automation. Skilled in AWS, Azure, Kubernetes, Terraform, ArgoCD, Helm, Grafana, Loki, Prometheus, and a wide range of DevOps tools. Known for delivering excellence and innovation in every project.</p>
 
-      <div class="col-md-4">
-        <div class="card text-center shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Active Sessions</h5>
-            <p class="display-6">342</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h2>Key Skills</h2>
+    <ul>
+        <li>Containerization & Virtualization</li>
+        <li>Pipeline & Configuration Management</li>
+        <li>Infrastructure Monitoring & Security Administration</li>
+        <li>Cloud Technology Management (AWS, Azure)</li>
+        <li>Load Balancing & Deployment Strategies</li>
+        <li>Process Automation & Troubleshooting</li>
+    </ul>
 
-    <div class="row mt-4">
-      <div class="col-md-8">
-        <canvas id="salesChart"></canvas>
-      </div>
-    </div>
-  </div>
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>DevOps Tools: Jenkins, Ansible, Puppet, Docker, Kubernetes</li>
+        <li>Languages: C, C++, Shell Script, YAML, JSON, XML</li>
+        <li>DBMS: MySQL, Oracle</li>
+        <li>Version Control: SVN, GitLab, GitHub</li>
+        <li>Servers: WebLogic, WebSphere, Tomcat, Apache</li>
+        <li>Cloud: AWS (VPC, EC2, RDS, S3, Route53, etc.), Azure</li>
+    </ul>
 
-  <script>
-    const ctx = document.getElementById('salesChart');
-    new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-        datasets: [
-          {
-            label: 'Sales',
-            data: [1200, 1900, 3000, 2500, 3200, 4100],
-            borderColor: 'blue',
-            backgroundColor: 'rgba(0, 0, 255, 0.1)',
-            fill: true,
-            tension: 0.3,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        plugins: {
-          legend: { position: 'top' },
-          title: {
-            display: true,
-            text: 'Sales Over 6 Months',
-          },
-        },
-      },
-    });
-  </script>
+    <h2>Professional Experience</h2>
+    <p class="subheading">Cloud DevSecOps Engineer & Kubernetes Specialist | CVS Health via TCS Canada | Jan 2022 – Present</p>
+    <ul>
+        <li>Migrated on-premise servers to Azure Cloud</li>
+        <li>Created AKS clusters using Terraform integrated with Jenkins & Argo CD</li>
+        <li>Implemented CI/CD pipelines from scratch</li>
+        <li>Developed and managed Dockerized environments</li>
+        <li>Managed repository migrations from SVN to GitHub</li>
+    </ul>
+
+    <p class="subheading">DevOps Engineer | Tata Consultancy Services | Mar 2014 – Jan 2022</p>
+    <ul>
+        <li>Designed AWS cloud architectures with VPC, EC2, S3, RDS, etc.</li>
+        <li>Implemented CI/CD automation for complex deployments</li>
+        <li>Led containerization projects using Docker and Kubernetes</li>
+        <li>Managed large-scale production infrastructure and releases</li>
+    </ul>
+
+    <h2>Education</h2>
+    <p>B.Tech, Saroj Mohan Institute of Technology (WBUT), CGPA: 7.83/10 (2009–2013)</p>
+
+    <h2>Certifications</h2>
+    <ul>
+        <li>AWS Certified Solutions Architect – Associate</li>
+        <li>Microsoft Azure Fundamentals (AZ-900)</li>
+        <li>Certified Kubernetes Administrator (CKA)</li>
+        <li>Certified Kubernetes Application Developer (CKAD)</li>
+        <li>DevOps Certification Training – Edureka</li>
+    </ul>
+
+    <h2>Awards & Achievements</h2>
+    <ul>
+        <li>Technical Excellence Award – TCS</li>
+        <li>Innovation Pride Award – TCS</li>
+        <li>Best Coding Skill – MYWBUT</li>
+    </ul>
+</section>
+
 </body>
 </html>
