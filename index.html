@@ -4,56 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaushal Kumar Chaman - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #f5f7fa;
             color: #333;
         }
         header {
-            background: #222;
-            color: #fff;
-            padding: 20px 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
             text-align: center;
+            padding: 40px 20px;
         }
         header h1 {
             margin: 0;
+            font-size: 2.5em;
         }
         header p {
-            margin: 5px 0;
+            margin: 8px 0;
+            font-size: 1.1em;
+        }
+        header a {
+            color: #ffd700;
+            text-decoration: none;
         }
         section {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
-            background: #fff;
             padding: 20px;
-            margin-top: 20px;
-            border-radius: 5px;
         }
         h2 {
-            border-bottom: 2px solid #555;
+            color: #1e3c72;
+            border-bottom: 2px solid #ddd;
             padding-bottom: 5px;
             margin-top: 30px;
         }
         ul {
-            list-style: none;
-            padding-left: 0;
+            padding-left: 20px;
         }
-        ul li::before {
-            content: "• ";
-            color: #0073e6;
-            font-weight: bold;
+        ul li {
+            margin-bottom: 8px;
         }
-        .contact a {
-            color: #fff;
-            text-decoration: none;
+        .card {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
         .subheading {
-            font-weight: bold;
-            margin-top: 10px;
+            font-weight: 600;
+            margin-top: 15px;
+            color: #444;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+            background: #1e3c72;
+            color: white;
+            margin-top: 30px;
+        }
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
@@ -61,74 +80,99 @@
 
 <header>
     <h1>Kaushal Kumar Chaman</h1>
-    <p class="contact">
-        📞 +1-437-972-2780 | 📧 <a href="mailto:chamankaushal@gmail.com">chamankaushal@gmail.com</a> | 
-        🌐 <a href="https://www.linkedin.com/in/kaushal-chaman-22b45a86/" target="_blank">LinkedIn</a>
-    </p>
-    <p>Toronto, Canada</p>
+    <p>📞 +1-437-972-2780 | 📧 <a href="mailto:chamankaushal@gmail.com">chamankaushal@gmail.com</a></p>
+    <p>🌐 <a href="https://www.linkedin.com/in/kaushal-chaman-22b45a86/" target="_blank">LinkedIn Profile</a> | Toronto, Canada</p>
 </header>
 
 <section>
-    <h2>Summary</h2>
-    <p>10+ years experienced & result-oriented DevOps Engineer with deep expertise in cloud-based technologies, infrastructure deployment, and core DevOps concepts such as containerization, virtualization, version control, load balancing, and automation. Skilled in AWS, Azure, Kubernetes, Terraform, ArgoCD, Helm, Grafana, Loki, Prometheus, and a wide range of DevOps tools. Known for delivering excellence and innovation in every project.</p>
+    <div class="card">
+        <h2>Summary</h2>
+        <p>10+ years experienced & result-oriented DevOps Engineer with deep expertise in cloud-based technologies, infrastructure deployment, and core DevOps concepts such as containerization, virtualization, version control, load balancing, and automation. Skilled in AWS, Azure, Kubernetes, Terraform, ArgoCD, Helm, Grafana, Loki, Prometheus, and a wide range of DevOps tools. Known for delivering excellence and innovation in every project.</p>
+    </div>
 
-    <h2>Key Skills</h2>
-    <ul>
-        <li>Containerization & Virtualization</li>
-        <li>Pipeline & Configuration Management</li>
-        <li>Infrastructure Monitoring & Security Administration</li>
-        <li>Cloud Technology Management (AWS, Azure)</li>
-        <li>Load Balancing & Deployment Strategies</li>
-        <li>Process Automation & Troubleshooting</li>
-    </ul>
+    <div class="card">
+        <h2>I BELIEVE IN</h2>
+        <ul>
+            <li>Getting the work done.</li>
+            <li>Updating oneself with new technologies.</li>
+            <li>Learning from mistakes is more important than apologizing for them.</li>
+            <li>Innovation is the only way forward.</li>
+        </ul>
+    </div>
 
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>DevOps Tools: Jenkins, Ansible, Puppet, Docker, Kubernetes</li>
-        <li>Languages: C, C++, Shell Script, YAML, JSON, XML</li>
-        <li>DBMS: MySQL, Oracle</li>
-        <li>Version Control: SVN, GitLab, GitHub</li>
-        <li>Servers: WebLogic, WebSphere, Tomcat, Apache</li>
-        <li>Cloud: AWS (VPC, EC2, RDS, S3, Route53, etc.), Azure</li>
-    </ul>
+    <div class="card">
+        <h2>Key Skills</h2>
+        <ul>
+            <li>Containerization & Virtualization</li>
+            <li>Pipeline & Configuration Management</li>
+            <li>Infrastructure Monitoring & Security Administration</li>
+            <li>Cloud Technology Management (AWS, Azure)</li>
+            <li>Load Balancing & Deployment Strategies</li>
+            <li>Process Automation & Troubleshooting</li>
+        </ul>
+    </div>
 
-    <h2>Professional Experience</h2>
-    <p class="subheading">Cloud DevSecOps Engineer & Kubernetes Specialist | CVS Health via TCS Canada | Jan 2022 – Present</p>
-    <ul>
-        <li>Migrated on-premise servers to Azure Cloud</li>
-        <li>Created AKS clusters using Terraform integrated with Jenkins & Argo CD</li>
-        <li>Implemented CI/CD pipelines from scratch</li>
-        <li>Developed and managed Dockerized environments</li>
-        <li>Managed repository migrations from SVN to GitHub</li>
-    </ul>
+    <div class="card">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>DevOps Tools: Jenkins, Ansible, Puppet, Docker, Kubernetes</li>
+            <li>Languages: C, C++, Shell Script, YAML, JSON, XML</li>
+            <li>DBMS: MySQL, Oracle</li>
+            <li>Version Control: SVN, GitLab, GitHub</li>
+            <li>Servers: WebLogic, WebSphere, Tomcat, Apache</li>
+            <li>Cloud: AWS (VPC, EC2, RDS, S3, Route53, etc.), Azure</li>
+        </ul>
+    </div>
 
-    <p class="subheading">DevOps Engineer | Tata Consultancy Services | Mar 2014 – Jan 2022</p>
-    <ul>
-        <li>Designed AWS cloud architectures with VPC, EC2, S3, RDS, etc.</li>
-        <li>Implemented CI/CD automation for complex deployments</li>
-        <li>Led containerization projects using Docker and Kubernetes</li>
-        <li>Managed large-scale production infrastructure and releases</li>
-    </ul>
+    <div class="card">
+        <h2>Professional Experience</h2>
+        <p class="subheading">Cloud DevSecOps Engineer & Kubernetes Specialist | CVS Health via TCS Canada | Jan 2022 – Present</p>
+        <ul>
+            <li>Migrated on-premise servers to Azure Cloud</li>
+            <li>Created AKS clusters using Terraform integrated with Jenkins & Argo CD</li>
+            <li>Implemented CI/CD pipelines from scratch</li>
+            <li>Developed and managed Dockerized environments</li>
+            <li>Managed repository migrations from SVN to GitHub</li>
+        </ul>
 
-    <h2>Education</h2>
-    <p>B.Tech, Saroj Mohan Institute of Technology (WBUT), CGPA: 7.83/10 (2009–2013)</p>
+        <p class="subheading">DevOps Engineer | Tata Consultancy Services | Mar 2014 – Jan 2022</p>
+        <ul>
+            <li>Designed AWS cloud architectures with VPC, EC2, S3, RDS, etc.</li>
+            <li>Implemented CI/CD automation for complex deployments</li>
+            <li>Led containerization projects using Docker and Kubernetes</li>
+            <li>Managed large-scale production infrastructure and releases</li>
+        </ul>
+    </div>
 
-    <h2>Certifications</h2>
-    <ul>
-        <li>AWS Certified Solutions Architect – Associate</li>
-        <li>Microsoft Azure Fundamentals (AZ-900)</li>
-        <li>Certified Kubernetes Administrator (CKA)</li>
-        <li>Certified Kubernetes Application Developer (CKAD)</li>
-        <li>DevOps Certification Training – Edureka</li>
-    </ul>
+    <div class="card">
+        <h2>Education</h2>
+        <p>B.Tech, Saroj Mohan Institute of Technology (WBUT), CGPA: 7.83/10 (2009–2013)</p>
+    </div>
 
-    <h2>Awards & Achievements</h2>
-    <ul>
-        <li>Technical Excellence Award – TCS</li>
-        <li>Innovation Pride Award – TCS</li>
-        <li>Best Coding Skill – MYWBUT</li>
-    </ul>
+    <div class="card">
+        <h2>Certifications</h2>
+        <ul>
+            <li>AWS Certified Solutions Architect – Associate</li>
+            <li>Microsoft Azure Fundamentals (AZ-900)</li>
+            <li>Certified Kubernetes Administrator (CKA)</li>
+            <li>Certified Kubernetes Application Developer (CKAD)</li>
+            <li>DevOps Certification Training – Edureka</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Awards & Achievements</h2>
+        <ul>
+            <li>Technical Excellence Award – TCS</li>
+            <li>Innovation Pride Award – TCS</li>
+            <li>Best Coding Skill – MYWBUT</li>
+        </ul>
+    </div>
 </section>
+
+<footer>
+    &copy; 2025 Kaushal Kumar Chaman. All Rights Reserved.
+</footer>
 
 </body>
 </html>
